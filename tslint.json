@@ -1,0 +1,12 @@
+{
+  "defaultSeverity": "error",
+  "extends": ["tslint:recommended", "tslint-plugin-prettier", "tslint-config-prettier"],
+  "jsRules": {},
+  "rules": {
+    "interface-name": false,
+    "prettier": true,
+    "react-hooks/exhaustive-deps": "off"
+  },
+  "rulesDirectory": [],
+  "printWidth": 120
+}
