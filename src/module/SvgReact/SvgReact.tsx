@@ -3,6 +3,7 @@ import { ResizeSensor } from 'css-element-queries';
 
 import { SvgWrapper } from './components/SvgWrapper';
 import { Toolbar } from './components/Toolbar';
+import {SvgLine} from "./components/SvgLine";
 
 export const SvgReact: React.FC = () => {
   const wrapper = useRef(null);
@@ -36,7 +37,7 @@ export const SvgReact: React.FC = () => {
       width: {wrapperRect.width}, height: {wrapperRect.height}
       <section style={{ width: '100%', height: '100%' }} ref={wrapper}>
         <SvgWrapper width={wrapperRect.width} height={wrapperRect.height}>
-          <rect x={30} width={100} height={200} fill={'red'} />
+          <SvgLine x1={30} x2={50} y1={23} y2={43} stroke={'red'} />
         </SvgWrapper>
         <Toolbar />
       </section>

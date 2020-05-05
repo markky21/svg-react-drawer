@@ -1,7 +1,12 @@
 import React, { useEffect, useRef } from 'react';
 
-interface SvgLineProps extends Partial<SVGLineElement> {
+interface SvgLineProps {
   elementRef?: (el: Element) => any;
+  x1: number;
+  x2: number;
+  y1: number;
+  y2:number;
+  stroke: string;
 }
 
 export const SvgLine: React.FC<SvgLineProps> = React.memo(props => {

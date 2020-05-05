@@ -30,7 +30,7 @@ export class SvgToolbarService {
     return this.selectedDrawElement$.pipe(
       map(drawElement => ({
         drawElement,
-        stroke: '#ff0099',
+        stroke: '#37d413',
         'stroke-width': 2,
         'fill-opacity': 0,
       })),

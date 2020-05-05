@@ -31,7 +31,6 @@ export class SvgMainService {
   }
 
   public initSVGScript(svg: Element): void {
-    debugger;
     this.svgDraw = (SVGExtended as any)(svg);
     this.svgGroup = this.svgDraw.group();
 
